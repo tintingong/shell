@@ -27,8 +27,13 @@ mkdir data
 # 2. Move the ./rawdata directory to ./data/raw
 mv rawdata data/raw
 
+
+mv ./rawdata directory to ./data/raw
+
 # 3. List the contents of the ./data/raw directory
 ls data/raw
+
+ls ./data/raw directory
 
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
 mkdir data/processed
@@ -36,6 +41,10 @@ mkdir data/processed/server_logs
 mkdir data/processed/user_logs
 mkdir data/processed/event_logs
 
+
+mkdir data/processed/server_logs
+mkdir data/processed/user_logs
+mkdir data/processed/event_logs
 
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
 cp data/raw/server*.log data/processed/server_logs/
