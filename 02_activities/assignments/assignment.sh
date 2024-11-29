@@ -25,8 +25,7 @@ unzip rawdata.zip
 mkdir data
 
 # 2. Move the ./rawdata directory to ./data/raw
-mkdir data/raw
-mv rawdata/* data/raw
+mv ./rawdata ./data/raw
 
 
 # 3. List the contents of the ./data/raw directory
@@ -53,7 +52,10 @@ cp data/raw/event*.log data/processed/event_logs/
 rm data/processed/user_logs/*_ipaddr_*
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
-echo ls data/processed/ data/inventory.txt
+touch ./data/inventory.txt
+
+ls ./data/processed/* >> ./data/inventory.txt
+cat ./data/inventory.txt
 
 
 ###########################################
